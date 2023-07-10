@@ -1,0 +1,276 @@
+<!doctype html>
+<html lang="en-us">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="initial-scale=1">
+		<title>Web Development Portfolio</title>
+	</head>
+
+	<style>
+
+		#container{
+			padding: 60px;
+			margin: auto;
+		}
+
+		#header{
+			background-color: #2636E8;
+			color: white;
+			font-size: 1.8em;
+			font-family: Helvetica;
+			margin-bottom: 50px;
+			width: 400px;
+			text-align: center;
+		}
+
+		#footer{
+			color: #2636E8;
+			font-size: 1em;
+			font-family: Helvetica;
+			margin-top: 100px;
+		}
+
+
+		img{
+			width: 100px ;
+			height: auto;
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+		}
+
+
+		#main > div{
+			padding-top: 50px;
+		}
+
+		#main > div > p{
+			font-style: italic;
+			font-size: 0.8em;
+			font-family: Helvetica;
+			text-align: center;
+		}
+
+		#mi1 {grid-area: mi1;}
+		#ma1 {grid-area: ma1;}
+		#mi2 {grid-area: mi2;}
+		#ma2 {grid-area: ma2;}
+		#mi3 {grid-area: mi3;}
+		#ma3 {grid-area: ma3;}
+		#mi4 {grid-area: mi4;}
+		#ma4 {grid-area: ma4;}
+		#mi5 {grid-area: mi5;}
+		#ma5 {grid-area: ma5;}
+		#mi6 {grid-area: mi6;}
+		#ma6 {grid-area: ma6;}
+		#mi7 {grid-area: mi7;}
+		#ma7 {grid-area: ma7;}
+		#mi8 {grid-area: mi8;}
+		#ma8 {grid-area: ma8;}
+		#ma9 {grid-area: ma9;}
+		#ma10 {grid-area: ma10;}
+
+		@media screen and (min-width: 961px){
+			#main{
+			  display: grid;
+			  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+			  grid-template-areas: 
+			  'mi1 ma1 mi2 ma2 mi3 ma3'
+			  'mi4 ma4 mi5 ma5 mi6 ma6'
+			  'mi7 ma7 mi8 ma8 ma9 ma10';
+
+			}
+		}
+
+		@media screen and (min-width: 481px) and (max-width: 960px){
+			#main{
+			  display: grid;
+			  grid-template-columns: 1fr 1fr 1fr;
+			  grid-template-areas: 
+			  'mi1 ma1 mi2'
+			  'ma2 mi3 ma3'
+			  'mi4 ma4 mi5'
+			  'ma5 mi6 ma6'
+			  'mi7 ma7 mi8'
+			  'ma8 ma9 ma10';
+			}
+		}
+
+		@media screen and (max-width: 480px){
+			#main{
+			  display: grid;
+			  grid-template-columns: 1fr;
+			  grid-template-areas: 
+			  'mi1' 
+			  'ma1' 
+			  'mi2'
+			  'ma2' 
+			  'mi3' 
+			  'ma3'
+			  'mi4' 
+			  'ma4' 
+			  'mi5'
+			  'ma5' 
+			  'mi6' 
+			  'ma6'
+			  'mi7' 
+			  'ma7' 
+			  'mi8'
+			  'ma8' 
+			  'ma9' 
+			  'ma10';
+			  /*grid-column-gap: 2em;*/
+			  /*grid-row-gap: 3em;*/
+
+			}
+
+			#container{
+				padding: 20px;
+				margin: auto;
+			}
+
+			#header{
+				font-size: 1em;
+				width: 250px;
+				margin: auto;
+			}
+
+			#footer{
+				font-size: 0.8em;
+				text-align: center;
+			}
+
+		}
+
+	</style>
+
+	<body>
+		<div id="container">
+		<h1 id="header">Web Development Portfolio</h1>
+
+		<div id="main">
+		<div id="mi1">
+			<img src="micro.png" class="mi">
+			<p>Micro #01<p>
+		</div>
+
+		<div id="ma1"><a href="#">
+			<img src="macro.png" class="ma"></a>
+			<p>Macro #01<p>
+		</div>
+
+		<div id="mi2">
+			<img src="micro.png" class="mi">
+			<p>Micro #02<p>
+		</div>
+
+		<div id="ma2">
+			<img src="macro.png" class="ma">
+			<p>Macro #02<p>
+		</div>
+
+		<div id="mi3">
+			<img src="micro.png" class="mi">
+			<p>Micro #03<p>
+		</div>
+
+		<div id="ma3">
+			<img src="macro.png" class="ma">
+			<p>Macro #03<p>
+		</div>
+
+		<div id="mi4">
+			<img src="micro.png" class="mi">
+			<p>Micro #04<p>
+		</div>
+
+		<div id="ma4">
+			<img src="macro.png" class="ma">
+			<p>Macro #04<p>
+		</div>
+
+		<div id="mi5">
+			<img src="micro.png" class="mi">
+			<p>Micro #05<p>
+		</div>
+
+		<div id="ma5">
+			<img src="macro.png" class="ma">
+			<p>Macro #05<p>
+		</div>
+
+		<div id="mi6">
+			<img src="micro.png" class="mi">
+			<p>Micro #06<p>
+		</div>
+
+		<div id="ma6">
+			<img src="macro.png" class="ma">
+			<p>Macro #06<p>
+		</div>
+
+		<div id="mi7">
+			<img src="micro.png" class="mi">
+			<p>Micro #07<p>
+		</div>
+
+		<div id="ma7">
+			<img src="macro.png" class="ma">
+			<p>Macro #07<p>
+		</div>
+
+		<div id="mi8">
+			<img src="micro.png" class="mi">
+			<p>Micro #08<p>
+		</div>
+
+		<div id="ma8">
+			<img src="macro.png" class="ma">
+			<p>Macro #08<p>
+		</div>
+
+		<div id="ma9">
+			<img src="macro.png" class="ma">
+			<p>Macro #09<p>
+		</div>
+
+		<div id="ma10">
+			<img src="macro.png" class="ma">
+			<p>Macro #10<p>
+		</div>
+	</div>
+
+
+
+		<p id="footer">© KATHERINE LIU</p>
+	</div>
+
+
+	<script>
+		let micro_icon = document.getElementsByClassName("mi")
+		let macro_icon = document.getElementsByClassName("ma")
+		console.log(micro_icon)
+		console.log(micro_icon[0])
+		for (let i = 0; i < micro_icon.length; i++){
+			micro_icon[i].onmouseover = function (){
+				micro_icon[i].src='micro_hover.png'
+			}
+			micro_icon[i].onmouseout = function (){
+				micro_icon[i].src='micro.png'
+			}
+		}
+
+		for (let i = 0; i < macro_icon.length; i++){
+			macro_icon[i].onmouseover = function (){
+				macro_icon[i].src='macro_hover.png'
+			}
+			macro_icon[i].onmouseout = function (){
+				macro_icon[i].src='macro.png'
+			}
+		}
+
+
+	</script>
+	
+	</body>
+</html>
